@@ -6,7 +6,7 @@ registerSW();
 
 
 
-const header = document.querySelector('.header');
+// const header = document.querySelector('.header');
 
-console.log(header)
-header.innerHTML = headerContent
+// console.log(header)
+// header.innerHTML = headerContent
