@@ -1,9 +1,12 @@
 import '../scss/main.scss';
+ import {headerContent} from './header.js';
 
-// uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
+import {registerSW} from './pwa.js';
+registerSW();
 
-/* place your code below */
 
-console.log('HELLO 🚀')
+
+const header = document.querySelector('.header');
+
+console.log(header)
+header.innerHTML = headerContent
