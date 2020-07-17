@@ -25,6 +25,14 @@ body {
   min-height: 100vh;
 }
 
+.main {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+align-content: center;
+}
+
 .navigation {
   background-color: $grey;
   padding-right: 16px;
