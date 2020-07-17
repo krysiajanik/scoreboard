@@ -46,9 +46,14 @@ body {
   &__button {
     background-color: #383F51;
     border-radius: 4px;
-    font-weight: 500;
-font-size: 18px;
-line-height: 16px;
+    padding: 12px;
+&--text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  color: $lightText;
+  text-decoration: none;
+}
   }
 }
 
@@ -70,7 +75,7 @@ line-height: 16px;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.75px;
-    color: #e7e9ee;
+    color: $lightText;
     text-decoration: none;
 
     display: flex;
