@@ -25,12 +25,31 @@ body {
   min-height: 100vh;
 }
 
+.logo {
+  margin-top: 64px;
+}
+
+.header {
+  font-weight: 400;
+  font-size: 44px;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
 .main {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  &__button {
+    background-color: #383F51;
+    border-radius: 4px;
+    font-weight: 500;
+font-size: 18px;
+line-height: 16px;
+  }
 }
 
 .navigation {
@@ -60,16 +79,49 @@ align-content: center;
   &__item {
     padding: 8px;
   }
-  &__icon{
+  &__icon {
     padding: 0 4px 0 8px;
   }
 }
 
 .players {
-display: flex;
-flex-direction: row;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.player{
+
+.player {
   padding: 0 120px 0 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__image {
+    border-radius: 50%;
+    padding: 12px;
+    &--one {
+      background-color: $firstTransparent;
+    }
+    &--two {
+      background-color: $secondTransparent;
+    }
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 32px;
+    &--one {
+      color: $first;
+    }
+    &--two {
+      color: $second;
+    }
+  }
+}
+
+.vs {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 32px;
 }
