@@ -46,20 +46,18 @@ body {
   justify-content: center;
   align-content: center;
   &__button {
-    background-color: #383F51;
+    background-color: #383f51;
     border-radius: 4px;
     padding: 12px;
-&--text {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 16px;
-  color: $lightText;
-  text-decoration: none;
-}
+    &--text {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 16px;
+      color: $lightText;
+      text-decoration: none;
+    }
   }
 }
-
-
 
 .players {
   display: flex;
