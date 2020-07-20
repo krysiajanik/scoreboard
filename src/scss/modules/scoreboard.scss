@@ -1,0 +1,25 @@
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    &__header {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        margin: 0 24px;
+    }
+}
+
+.dropdown {
+    margin: 4px 24px;
+    min-width: 80px;
+}

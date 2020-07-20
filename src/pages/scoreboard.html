@@ -47,64 +47,68 @@
     </header>
 
     <main class="scoreboard">
-        <p class="scoreboard__header">IN THE LAST </p>
-        <select name="number" id="number-select" aria-label="select the number">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="20">20</option>
-            <option value="30">30</option>
-            <option value="50">50</option>
-        </select>
-        <select name="period" id="period" aria-label="select time period">
-            <option value="day">day</option>
-            <option value="week">week</option>
-            <option value="month">month</option>
-            <option value="year">years</option>
-        </select>
-        <p class="scoreboard__header">THIS IS HOW MANY TIMES EACH OF YOU:</p>
+        <section class="scoreboard__intro">
+            <p class="scoreboard__header">IN THE LAST </p>
+            <select name="number" class="dropdown" id="number-select" aria-label="select the number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+            </select>
+            <select name="period" class="dropdown" id="period" aria-label="select time period">
+                <option value="day">day</option>
+                <option value="week">week</option>
+                <option value="month">month</option>
+                <option value="year">years</option>
+            </select>
+            <p class="scoreboard__header">THIS IS HOW MANY TIMES EACH OF YOU:</p>
+        </section>
 
         <section class="scoreboard-names">
             <p class="player__name player__name--one player__name--js ">John Doe</p>
             <p class="player__name player__name--two player__name--js">Jane Doe</p>
         </section>
         <section class="scoreboard-action scoreboard-action--js">
-            <img class="scoreboard-action__icon scoreboard-action__icon--js" src="../assets/img/actions/footprint.png"/>
+            <img class="scoreboard-action__icon scoreboard-action__icon--js"
+                src="../assets/img/actions/footprint.png" />
             <p class="scoreboard-action__name scoreboard-action__name--js">walked the dog</p>
             <p class="scoreboard-action__counter-one scoreboard-action__counter-one--js">12</p>
             <p class="scoreboard-action__counter-one scoreboard-action__counter-one--js">6</p>
         </section>
         <section class="scoreboard-action scoreboard-action--js">
-            <img class="scoreboard-action__icon scoreboard-action__icon--js" src="../assets/img/actions/wash.png"/>
+            <img class="scoreboard-action__icon scoreboard-action__icon--js" src="../assets/img/actions/wash.png" />
             <p class="scoreboard-action__name scoreboard-action__name--js">cleaned</p>
             <p class="scoreboard-action__counter-one scoreboard-action__counter-one--js">1</p>
             <p class="scoreboard-action__counter-one scoreboard-action__counter-one--js">8</p>
         </section>
         <section class="scoreboard-action scoreboard-action--js">
-            <img class="scoreboard-action__icon scoreboard-action__icon--js" src="../assets/img/actions/favorite.png"/>
+            <img class="scoreboard-action__icon scoreboard-action__icon--js" src="../assets/img/actions/favorite.png" />
             <p class="scoreboard-action__name scoreboard-action__name--js">did something nice</p>
             <p class="scoreboard-action__counter-one scoreboard-action__counter-one--js">5</p>
             <p class="scoreboard-action__counter-one scoreboard-action__counter-one--js">7</p>
         </section>
         <section class="scoreboard-action scoreboard-action--js">
-            <img class="scoreboard-action__icon scoreboard-action__icon--js" src="../assets/img/actions/unhappy.png"/>
+            <img class="scoreboard-action__icon scoreboard-action__icon--js" src="../assets/img/actions/unhappy.png" />
             <p class="scoreboard-action__name scoreboard-action__name--js">was grumpy</p>
             <p class="scoreboard-action__counter-one scoreboard-action__counter-one--js">7</p>
             <p class="scoreboard-action__counter-one scoreboard-action__counter-one--js">3</p>
         </section>
         <section class="scoreboard-action scoreboard-action--js">
-            <img class="scoreboard-action__icon scoreboard-action__icon--js" src="../assets/img/actions/local_bar.png"/>
+            <img class="scoreboard-action__icon scoreboard-action__icon--js"
+                src="../assets/img/actions/local_bar.png" />
             <p class="scoreboard-action__name scoreboard-action__name--js">went out drinking</p>
             <p class="scoreboard-action__counter-one scoreboard-action__counter-one--js">8</p>
             <p class="scoreboard-action__counter-one scoreboard-action__counter-one--js">8</p>
