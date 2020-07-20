@@ -2,6 +2,7 @@
 
 @import "_variables";
 @import "modules/hello.scss";
+@import "modules/navigation.scss";
 
 @import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200;1,300;1,400&family=Open+Sans:ital,wght@1,300;1,400&family=Quicksand:wght@300;400;500;600&display=swap";
 
@@ -57,40 +58,7 @@ body {
   }
 }
 
-.navigation {
-  background-color: $grey;
-  padding-right: 16px;
 
-  &__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-  }
-  &__link {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.75px;
-    color: $lightText;
-    text-decoration: none;
-
-    display: flex;
-    align-items: center;
-  }
-  &__item {
-    padding: 8px;
-    &--special {
-      background: rgba(199, 226, 231, 0.28);
-    }
-  }
-  &__icon {
-    padding: 0 4px 0 8px;
-  }
-}
 
 .players {
   display: flex;
