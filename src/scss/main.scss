@@ -83,6 +83,9 @@ body {
   }
   &__item {
     padding: 8px;
+    &--special {
+      background: rgba(199, 226, 231, 0.28);
+    }
   }
   &__icon {
     padding: 0 4px 0 8px;
