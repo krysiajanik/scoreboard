@@ -1,46 +1,80 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoreboard</title>
-    <meta name="description" content="Your project description">
-    <meta property="og:title" content="Scoreboard">
-    <meta property="og:description" content="Keep score with your firends and family!">
-  
-    <meta property="og:url" content="https://krysiajanik.github.io/scoreboard/">
-  
-    <meta property="og:image" content="https://krysiajanik.github.io/scoreboard/cover.png">
-</head>
-<body>
-    <header class="navigation">
+<!DOCTYPE html>
+<html lang="en">
 
-        < <ul class="navigation__list">
-          <li class="navigation__item">
-              <a class="navigation__link" href="scoreboard.html">
-                  <img class="navigation__icon" src="../assets/img/timeline.svg">
-                  Scoreboard
-              </a>
-          </li>
-          <li class="navigation__item">
-              <a class="navigation__link" href="calendar.html">
-                  <img class="navigation__icon" src="../assets/img/calendar.svg">
-                  Calendar
-              </a>
-          </li>
-          <li class="navigation__item">
-              <a class="navigation__link" href="activities.html">
-                  <img class="navigation__icon" src="../assets/img/pencil.svg">
-                  Define Activities
-              </a>
-          </li>
-          <li class="navigation__item">
-              <a class="navigation__link" href="index.html">
-                  <img class="navigation__icon" src="../assets/img/home.svg">
-                  Home
-              </a>
-          </li>
-      </ul>
-    
-      </header>
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoreboard</title>
+  <meta name="description" content="Your project description">
+  <meta property="og:title" content="Scoreboard">
+  <meta property="og:description" content="Keep score with your firends and family!">
+
+  <meta property="og:url" content="https://krysiajanik.github.io/scoreboard/">
+
+  <meta property="og:image" content="https://krysiajanik.github.io/scoreboard/cover.png">
+</head>
+
+<body>
+  <header class="navigation">
+
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <a class="navigation__link" href="scoreboard.html">
+          <img class="navigation__icon" src="../assets/img/timeline.svg">
+          Scoreboard
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="calendar.html">
+          <img class="navigation__icon" src="../assets/img/calendar.svg">
+          Calendar
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="activities.html">
+          <img class="navigation__icon" src="../assets/img/pencil.svg">
+          Define Activities
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="index.html">
+          <img class="navigation__icon" src="../assets/img/home.svg">
+          Home
+        </a>
+      </li>
+    </ul>
+
+  </header>
+
+ <main>
+   <section class="day">
+     <button class="day__button day__previous--js" aria-label="previous day">&#60;</button>
+
+     <div class="day__minus-two day__minus-two--js">
+       <p class="day__month day__month--js">july</p>
+       <p>13</p>
+     </div>
+     <div class="day__minus-oneo day__minus-one--js">
+      <p class="day__month day__month--js">july</p>
+      <p>14</p>
+    </div>
+    <div class="day__selected day__selected--js">
+      <p class="day__month day__month--js">july</p>
+      <p>15</p>
+    </div>
+    <div class="day__plus-one day__plus-one--js">
+      <p class="day__month day__month--js">july</p>
+      <p>16</p>
+    </div>
+    <div class="day__plus-two day__minus-plus--js">
+      <p class="day__month day__month--js">july</p>
+      <p>17</p>
+    </div>
+
+     <button class="day__button day__following--js" aria-label="following day">&#62;</button>
+
+   </section>
+ </main>
 </body>
+
 </html>
