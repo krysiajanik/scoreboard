@@ -4,6 +4,7 @@
     align-content: center;
     align-items: center;
     justify-content: center;
+    margin-top: 64px;
     &__button {
         background-color: $lightText;
         border: 1px solid #a1a4b1;
@@ -15,18 +16,33 @@
         padding: 12px;
         margin: 12px;
         display: flex;
+        flex-direction: column;
         align-content: center;
         align-items: center;
-        justify-content: center;
-    }
-    &__minus-two {
-    }
-    &__minus-one {
+        justify-content: flex-start;
+        &--two {
+            background: rgba(222, 236, 241, 0.2);
+            color: rgba(0, 0, 0, 0.6);
+        }
+        &--one {
+            background: rgba(222, 236, 241, 0.4);
+            color: rgba(0, 0, 0, 0.8);
+        }
     }
     &__selected {
+        background: #deecf1;
+        color: #000000;
     }
-    &__plus-one {
+
+    &__month {
+        font-size: 16px;
+        line-height: 32px;
+        margin: 0;
     }
-    &__plus-two {
+    &__day {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        margin: 16px 0 0 0;
     }
 }
