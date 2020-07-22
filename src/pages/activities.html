@@ -1,46 +1,83 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoreboard</title>
-    <meta name="description" content="Your project description">
-    <meta property="og:title" content="Scoreboard">
-    <meta property="og:description" content="Keep score with your firends and family!">
-  
-    <meta property="og:url" content="https://krysiajanik.github.io/scoreboard/">
-  
-    <meta property="og:image" content="https://krysiajanik.github.io/scoreboard/cover.png">
-</head>
-<body>
-    <header class="navigation">
+<!DOCTYPE html>
+<html lang="en">
 
-      <ul class="navigation__list">
-        <li class="navigation__item">
-            <a class="navigation__link" href="scoreboard.html">
-                <img class="navigation__icon" src="../assets/img/timeline.svg">
-                Scoreboard
-            </a>
-        </li>
-        <li class="navigation__item">
-            <a class="navigation__link" href="calendar.html">
-                <img class="navigation__icon" src="../assets/img/calendar.svg">
-                Calendar
-            </a>
-        </li>
-        <li class="navigation__item">
-            <a class="navigation__link" href="activities.html">
-                <img class="navigation__icon" src="../assets/img/pencil.svg">
-                Define Activities
-            </a>
-        </li>
-        <li class="navigation__item">
-            <a class="navigation__link" href="index.html">
-                <img class="navigation__icon" src="../assets/img/home.svg">
-                Home
-            </a>
-        </li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoreboard</title>
+  <meta name="description" content="Your project description">
+  <meta property="og:title" content="Scoreboard">
+  <meta property="og:description" content="Keep score with your firends and family!">
+
+  <meta property="og:url" content="https://krysiajanik.github.io/scoreboard/">
+
+  <meta property="og:image" content="https://krysiajanik.github.io/scoreboard/cover.png">
+</head>
+
+<body>
+  <header class="navigation">
+
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <a class="navigation__link" href="scoreboard.html">
+          <img class="navigation__icon" src="../assets/img/timeline.svg">
+          Scoreboard
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="calendar.html">
+          <img class="navigation__icon" src="../assets/img/calendar.svg">
+          Calendar
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="activities.html">
+          <img class="navigation__icon" src="../assets/img/pencil.svg">
+          Define Activities
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="index.html">
+          <img class="navigation__icon" src="../assets/img/home.svg">
+          Home
+        </a>
+      </li>
     </ul>
-    
-      </header>
-    
+
+  </header>
+  <main>
+    <section class="action">
+      <p class="action__text">
+        I WANT TO KEEP SCORE WHO
+      </p>
+      <input class="action__input" type="text" id="action" name="action" required minlength="1" maxlength="64" aria-label="type your action name">
+      <p class="action__text">
+        MORE
+      </p>
+    </section>
+
+    <section class="icon">
+      <p class="icon__text">PICK YOU ICON</p>
+      <div class="icon__grid">
+        <img class="icon__img" src="../assets/img/actions/pin.png" alt="location pin">
+        <img class="icon__img" src="../assets/img/actions/run.png" alt="running person">
+        <img class="icon__img" src="../assets/img/actions/person.png" alt="person">
+        <img class="icon__img" src="../assets/img/actions/local_dining.png" alt="crossed cutlery">
+        <img class="icon__img" src="../assets/img/actions/local_bar.png" alt="martini glass">
+        <img class="icon__img" src="../assets/img/actions/wine.png" alt="wine glass">
+        <img class="icon__img" src="../assets/img/actions/wash.png" alt="cleaning products">
+        <img class="icon__img" src="../assets/img/actions/footprint.png" alt="animal paw footprint">
+        <img class="icon__img" src="../assets/img/actions/favorite.png" alt="heart">
+        <img class="icon__img" src="../assets/img/actions/error.png" alt="exclamation sign">
+        <img class="icon__img" src="../assets/img/actions/close.png" alt="X sign">
+        <img class="icon__img" src="../assets/img/actions/delete.png" alt="trash can">
+        <img class="icon__img" src="../assets/img/actions/happy.png" alt="happy smiley">
+        <img class="icon__img" src="../assets/img/actions/unhappy.png" alt="unhappy smiley">
+        <img class="icon__img" src="../assets/img/actions/child_care.png" alt="baby">
+
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
