@@ -46,11 +46,12 @@
 
   </header>
   <main>
+    <form class="form">
     <section class="action">
       <p class="action__text">
         I WANT TO KEEP SCORE WHO
       </p>
-      <input class="action__input" type="text" id="action" name="action" required minlength="1" maxlength="64" aria-label="type your action name">
+      <input class="action__input" type="text" id="action" name="action" placeholder="cleaned" required minlength="2" maxlength="64" aria-label="type your action name">
       <p class="action__text">
         MORE
       </p>
@@ -77,6 +78,11 @@
 
       </div>
     </section>
+
+    <p class="submit">
+      <input type="submit" class="submit__action" value="ADD">
+  </p>
+</form>
   </main>
 </body>
 
