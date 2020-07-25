@@ -37,21 +37,28 @@
     &__grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        grid-gap: 12px 24px;
         border: 0;
         padding: 0;
         margin: 0;
         min-width: 0;
     }
+
+    &__fieldset {
+        display: contents;
+    }
+
     &__img {
-        margin: 12px 24px;
         padding: 4px;
         cursor: pointer;
+        display: inline-block;
     }
     &__radio {
         position: absolute;
         opacity: 0;
         width: 0;
         height: 0;
+        display: inline-block;
     }
 }
 

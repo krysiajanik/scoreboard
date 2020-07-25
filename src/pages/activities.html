@@ -47,53 +47,89 @@
   </header>
   <main>
     <form class="form">
-    <section class="action">
-      <p class="action__text">
-        I WANT TO KEEP SCORE WHO
+      <section class="action">
+        <p class="action__text">
+          I WANT TO KEEP SCORE WHO
+        </p>
+        <input class="action__input" type="text" id="action" name="action" placeholder="cleaned" required minlength="2"
+          maxlength="64" aria-label="type your action name">
+        <p class="action__text">
+          MORE
+        </p>
+      </section>
+
+      <section class="icon">
+        <p class="icon__text">PICK YOU ICON</p>
+        <fieldset class="icon__fieldset">
+          <span class="icon__grid">
+            <label tabindex="0">
+              <input type="radio" id="pin" name="icon" value="pin" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/pin.png" alt="location pin">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="run" name="icon" value="run" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/run.png" alt="running person">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="person" name="icon" value="person" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/person.png" alt="person">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="cutlery" name="icon" value="cutlery" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/local_dining.png" alt="crossed cutlery">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="martini" name="icon" value="martini" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/local_bar.png" alt="martini glass">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="wine" name="icon" value="wine" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/wine.png" alt="wine glass">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="clean" name="icon" value="clean" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/wash.png" alt="cleaning products">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="paw" name="icon" value="paw" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/footprint.png" alt="animal paw footprint">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="heart" name="icon" value="heart" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/favorite.png" alt="heart">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="exclamation" name="icon" value="exclamation" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/error.png" alt="exclamation sign">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="ex" name="icon" value="ex" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/close.png" alt="X sign">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="trash" name="icon" value="trash" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/delete.png" alt="trash can">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="happy" name="icon" value="happy" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/happy.png" alt="happy smiley">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="unhappy" name="icon" value="unhappy" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/unhappy.png" alt="unhappy smiley">
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="baby" name="icon" value="baby" class="icon__radio">
+              <img class="icon__img" src="../assets/img/actions/child_care.png" alt="baby">
+            </label>
+          </span>
+        </fieldset>
+      </section>
+
+      <p class="submit">
+        <input type="submit" class="submit__action" value="ADD">
       </p>
-      <input class="action__input" type="text" id="action" name="action" placeholder="cleaned" required minlength="2" maxlength="64" aria-label="type your action name">
-      <p class="action__text">
-        MORE
-      </p>
-    </section>
-
-    <section class="icon">
-      <p class="icon__text">PICK YOU ICON</p>
-      <fieldset class="icon__grid">
-        <label>
-        <input type="radio" id="pin" name="icon" value="pin" class="icon__radio" >
-        <img class="icon__img" src="../assets/img/actions/pin.png" alt="location pin">
-        </label>
-        <label>
-          <input type="radio" id="run" name="icon" value="run" class="icon__radio">
-          <img class="icon__img" src="../assets/img/actions/run.png" alt="running person">
-        </label>
-        <label>
-          <input type="radio" id="person" name="icon" value="person" class="icon__radio">
-          <img class="icon__img" src="../assets/img/actions/person.png" alt="person">
-        </label>
-        
-        
-        <img class="icon__img" src="../assets/img/actions/local_dining.png" alt="crossed cutlery">
-        <img class="icon__img" src="../assets/img/actions/local_bar.png" alt="martini glass">
-        <img class="icon__img" src="../assets/img/actions/wine.png" alt="wine glass">
-        <img class="icon__img" src="../assets/img/actions/wash.png" alt="cleaning products">
-        <img class="icon__img" src="../assets/img/actions/footprint.png" alt="animal paw footprint">
-        <img class="icon__img" src="../assets/img/actions/favorite.png" alt="heart">
-        <img class="icon__img" src="../assets/img/actions/error.png" alt="exclamation sign">
-        <img class="icon__img" src="../assets/img/actions/close.png" alt="X sign">
-        <img class="icon__img" src="../assets/img/actions/delete.png" alt="trash can">
-        <img class="icon__img" src="../assets/img/actions/happy.png" alt="happy smiley">
-        <img class="icon__img" src="../assets/img/actions/unhappy.png" alt="unhappy smiley">
-        <img class="icon__img" src="../assets/img/actions/child_care.png" alt="baby">
-
-      </fieldset>
-    </section>
-
-    <p class="submit">
-      <input type="submit" class="submit__action" value="ADD">
-  </p>
-</form>
+    </form>
   </main>
 </body>
 
