@@ -37,10 +37,27 @@
     &__grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        border: 0;
+        padding: 0;
+        margin: 0;
+        min-width: 0;
     }
     &__img {
-        padding: 12px 24px;
+        margin: 12px 24px;
+        padding: 4px;
+        cursor: pointer;
     }
+    &__radio {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+.icon__radio:checked + .icon__img {
+    outline: 0.1px solid $grey;
+    background-color: #c1cbe27c;
 }
 
 .submit {

@@ -45,5 +45,13 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krysiajanik/scoreboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krysiajanik/scoreboard/issues"
+  },
+  "homepage": "https://github.com/krysiajanik/scoreboard#readme"
 }
