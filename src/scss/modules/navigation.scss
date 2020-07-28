@@ -1,6 +1,6 @@
 .navigation {
     background-color: $grey;
-    padding-right: 16px;
+    padding-right: 1rem;
   
     &__list {
       display: flex;
@@ -13,8 +13,8 @@
     }
     &__link {
       font-weight: bold;
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
       letter-spacing: 0.75px;
       color: $lightText;
       text-decoration: none;
@@ -23,12 +23,12 @@
       align-items: center;
     }
     &__item {
-      padding: 8px;
+      padding: 0.5rem;
       &--special {
         background: rgba(199, 226, 231, 0.28);
       }
     }
     &__icon {
-      padding: 0 4px 0 8px;
+      padding: 0 0.25rem 0 0.5rem;
     }
   }
