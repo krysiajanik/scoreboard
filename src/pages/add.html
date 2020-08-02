@@ -143,31 +143,27 @@
       </form>
     </section>
 
-    <section class="view view--js">
-      <table class="table">
-        <thead class="table__head">
-          <tr>
-            <th class="table__time table__cell">time</th>
-            <th class="table__person table__cell">person</th>
-            <th class="table__action table__cell">action</th>
-            <th class="table__comments table__cell">comments</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="table__cell">12:50</td>
-            <td class="table__cell">John Doe</td>
-            <td class="table__cell">walked the dog</td>
-            <td class="table__cell">dog was happy</td>
-          </tr>
-          <tr>
-            <td class="table__cell">17:11</td>
-            <td class="table__cell">Jane Doe</td>
-            <td class="table__cell">went out drinking</td>
-            <td class="table__cell">again</td>
-          </tr>
-        </tbody>
-      </table>
+    <section class="view  view--visible view--js">
+      <section class="card">
+        <p class="card__time">12:50</p>
+        <div class="card__flex">
+          <img src="../assets/img/photo.png" class="card__image card__image--one">
+          <h3 class="card__player card__player--one">John Doe</h3>
+        </div>
+        <p class="card__action">walked the dog</p>
+        <p class="card__comment">dog was happy</p>
+      </section>
+
+      <section class="card">
+        <p class="card__time">17:11</p>
+        <div class="card__flex">
+          <img src="../assets/img/photo.png" class="card__image card__image--two">
+          <h3 class="card__player card__player--two">Jane Doe</h3>
+        </div>
+        <p class="card__action">went out drinking</p>
+        <p class="card__comment">again</p>
+      </section>
+
     </section>
   </main>
 </body>

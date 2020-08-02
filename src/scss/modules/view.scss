@@ -1,34 +1,59 @@
 .view {
   display: none;
-  &--visible{
+  &--visible {
     display: block;
   }
 }
 
-.table {
+.card {
+  background-color: #e7e9ee;
+  box-shadow: 0.25rem 0.25rem 0.25rem #8c95a8;
+  width: 18rem;
   margin: 2rem auto;
-  padding: 0.5rem;
-  text-align: center;
-  table-layout: fixed;
-  width: 640px;
-  border-collapse: collapse;
-  &__head{
-    border-bottom: 1px solid $text;
+  padding: 0 1rem 1rem 1rem;
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__image {
+    width: 3rem;
+    border-radius: 50%;
+    padding: 0.25rem;
+    &--one {
+      background-color: $firstTransparent;
+    }
+    &--two {
+      background-color: $secondTransparent;
+    }
+  }
+  &__player {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 0 0 1rem;
+    &--one {
+      color: $first;
+    }
+    &--two {
+      color: $second;
+    }
   }
   &__time {
-    width: 3rem;
-  }
-  &__person {
-    width: 6rem;
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    position: relative;
+    right: 4rem;
   }
   &__action {
-    width: 9rem;
+    font-weight: 400;
   }
-  &__comments {
-    width: 9rem;
-  }
-
-  &__cell {
-    padding: 0.5rem;
+  &__comment {
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
   }
 }
