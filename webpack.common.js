@@ -96,6 +96,12 @@ module.exports = {
       filename: "calendar.html",
     }),
     new HtmlWebpackPlugin({
+      template: "./src/pages/add.html",
+      inject: true,
+      chunks: ["index", "calendar"],
+      filename: "add.html",
+    }),
+    new HtmlWebpackPlugin({
       template: "./src/pages/scoreboard.html",
       inject: true,
       chunks: ["index", "another"],

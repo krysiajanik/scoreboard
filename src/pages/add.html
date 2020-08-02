@@ -16,7 +16,6 @@
 
 <body>
   <header class="navigation">
-
     <ul class="navigation__list">
       <li class="navigation__item">
         <a class="navigation__link" href="scoreboard.html">
@@ -25,7 +24,7 @@
         </a>
       </li>
       <li class="navigation__item">
-        <a class="navigation__link" href="calendar.html">
+        <a class="navigation__link" href="add.html">
           <img class="navigation__icon" src="../assets/img/add.svg">
           Add
         </a>
@@ -66,10 +65,25 @@
         <p class="date__month">july</p>
         <p class="date__day">14</p>
       </div>
-      <div class="date__box date__selected date__selected--js">
+      <div class="date__box date__selected">
+        <div class="date__box--selected date__selected--js">
         <p class="date__year">2020</p>
         <p class="date__month">july</p>
         <p class="date__day">15</p>
+        </div>
+        <div class="actions">
+          <button class="actions__button actions__add actions__add--js" aria-label="add activity">
+            <img class="actions__icon" src="../assets/img/add.svg" alt="add activity" />
+          </button>
+          <button class="actions__button actions__view actions__view--js" aria-label="view saved activities">
+            <img class="actions__icon" src="../assets/img/see.svg" alt="view saved activities" />
+          </button>
+          <button class="actions__button" aria-label="go to calendar">
+            <a href="calendar.html">
+            <img class="actions__icon" src="../assets/img/calendar.svg" alt="go to calendar" />
+          </a>
+          </button>
+        </div>
       </div>
       <div class="date__box date__box--one date__plus-one date__plus-one--js">
         <p class="date__year">2020</p>

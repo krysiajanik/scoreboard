@@ -1,3 +1,20 @@
+.actions {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    &__button {
+        border: none;
+        background: #deecf100;
+        margin: 0;
+        padding: 0;
+        
+    }
+    &__icon{
+        height: 24px;
+    }
+}
+
 .date {
     display: flex;
     flex-direction: row;
@@ -14,7 +31,7 @@
         width: 9.25rem;
         height: 11.25rem;
         padding: 0.75rem;
-        margin: 0.75rem;
+        margin: 0.25rem;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -23,10 +40,19 @@
         &--two {
             background: rgba(222, 236, 241, 0.2);
             color: rgba(0, 0, 0, 0.6);
+            transform: scale(0.8);
+            margin: -0.25rem;
         }
         &--one {
             background: rgba(222, 236, 241, 0.4);
             color: rgba(0, 0, 0, 0.8);
+            transform: scale(0.9);
+        }
+        &--selected {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            
         }
     }
     &__selected {
