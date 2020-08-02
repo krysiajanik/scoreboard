@@ -114,3 +114,12 @@ function nowMinus() {
 //get the button and add event listener
 const buttonPrevious = document.querySelector(".date__previous--js");
 buttonPrevious.addEventListener('click', nowMinus);
+
+
+
+//show the fields for adding action
+const addAction = document.querySelector(".actions__add--js")
+addAction.addEventListener('click', () => {
+  const addActionVisible = document.querySelector(".insert--js")
+  addActionVisible.classList.toggle('insert--visible')
+});

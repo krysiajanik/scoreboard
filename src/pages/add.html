@@ -106,17 +106,19 @@
     <section class="insert insert--js">
       <form class="form">
         <fieldset class="insert__fieldset">
+          <span class="insert__person--flex">
           <label tabindex="0">
             <input type="radio" id="playerOne" name="player" value="playerOne" class="insert__person--radio">
-            <p class="insert__person insert__person--js">John Doe</p>
+            <p class="insert__person insert__person--one insert__person--js">John Doe</p>
           </label>
           <label tabindex="0">
             <input type="radio" id="playerTwo" name="player" value="playerTwo" class="insert__person--radio">
-            <p class="insert__person insert__person--js">Jane Doe</p>
+            <p class="insert__person insert__person--two insert__person--js">Jane Doe</p>
           </label>
+          </span>
         </fieldset>
 
-        <select name="action" class="dropdown dropdown--js" id="action" aria-label="select which actions">
+        <select name="action" class="insert__field insert__dropdown insert__dropdown--js" id="action" aria-label="select which actions">
           <option value="1">walked the dog</option>
           <option value="2">cleaned</option>
           <option value="3">did something nice</option>
@@ -125,11 +127,11 @@
         </select>
 
         <section class="insert__comments">
-          <p class="insert__text">
+          <label class="insert__text" for="comments">
             Comments
-          </p>
-          <input class="insert__input" type="text" id="comments" name="comments" required minlength="2" maxlength="248"
-            aria-label="type any comments for the action">
+          </label>
+          <textarea class="insert__field insert__field--comments" type="text" id="comments" name="comments" minlength="2" maxlength="124"
+            aria-label="type any comments for the action"></textarea>
         </section>
 
 

@@ -1,0 +1,57 @@
+.insert {
+  display: none;
+  margin-top: 2rem;
+  &--visible{
+    display: block;
+  }
+
+  &__fieldset {
+    display: contents;
+  }
+  &__person {
+    padding: 0.5rem;
+    font-weight: 600;
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.5rem;
+
+    &--one {
+      color: $first;
+    }
+    &--two {
+      color: $second;
+    }
+
+    &--radio {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+      display: inline-block;
+    }
+    &--flex {
+      display: flex;
+    }
+  }
+  &__field {
+    margin: 0.25rem 0;
+    padding: 0.25rem;
+    width: 14rem;
+    &--comments {
+      height: 7rem;
+      max-width: 14rem;
+    }
+  }
+  &__comments {
+    margin-top: 1rem;
+  }
+  &__text {
+    margin: 1rem 0 0 0;
+    display: block;
+
+  }
+}
+
+.insert__person--radio:checked + .insert__person {
+  outline: 0.1px solid $grey;
+  background-color: #deecf17c;
+}
