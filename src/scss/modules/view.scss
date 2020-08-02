@@ -1,0 +1,33 @@
+.view {
+  &--visible{
+    display: block;
+  }
+}
+
+.table {
+  margin: 2rem auto;
+  padding: 0.5rem;
+  text-align: center;
+  table-layout: fixed;
+  width: 640px;
+  border-collapse: collapse;
+  &__head{
+    border-bottom: 1px solid $text;
+  }
+  &__time {
+    width: 3rem;
+  }
+  &__person {
+    width: 6rem;
+  }
+  &__action {
+    width: 9rem;
+  }
+  &__comments {
+    width: 9rem;
+  }
+
+  &__cell {
+    padding: 0.5rem;
+  }
+}

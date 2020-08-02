@@ -107,18 +107,19 @@
       <form class="form">
         <fieldset class="insert__fieldset">
           <span class="insert__person--flex">
-          <label tabindex="0">
-            <input type="radio" id="playerOne" name="player" value="playerOne" class="insert__person--radio">
-            <p class="insert__person insert__person--one insert__person--js">John Doe</p>
-          </label>
-          <label tabindex="0">
-            <input type="radio" id="playerTwo" name="player" value="playerTwo" class="insert__person--radio">
-            <p class="insert__person insert__person--two insert__person--js">Jane Doe</p>
-          </label>
+            <label tabindex="0">
+              <input type="radio" id="playerOne" name="player" value="playerOne" class="insert__person--radio">
+              <p class="insert__person insert__person--one insert__person--js">John Doe</p>
+            </label>
+            <label tabindex="0">
+              <input type="radio" id="playerTwo" name="player" value="playerTwo" class="insert__person--radio">
+              <p class="insert__person insert__person--two insert__person--js">Jane Doe</p>
+            </label>
           </span>
         </fieldset>
 
-        <select name="action" class="insert__field insert__dropdown insert__dropdown--js" id="action" aria-label="select which actions">
+        <select name="action" class="insert__field insert__dropdown insert__dropdown--js" id="action"
+          aria-label="select which actions">
           <option value="1">walked the dog</option>
           <option value="2">cleaned</option>
           <option value="3">did something nice</option>
@@ -130,8 +131,8 @@
           <label class="insert__text" for="comments">
             Comments
           </label>
-          <textarea class="insert__field insert__field--comments" type="text" id="comments" name="comments" minlength="2" maxlength="124"
-            aria-label="type any comments for the action"></textarea>
+          <textarea class="insert__field insert__field--comments" type="text" id="comments" name="comments"
+            minlength="2" maxlength="124" aria-label="type any comments for the action"></textarea>
         </section>
 
 
@@ -142,8 +143,31 @@
       </form>
     </section>
 
-    <section class="view view--js">
-
+    <section class="view view--visble view--js">
+      <table class="table">
+        <thead class="table__head">
+          <tr>
+            <th class="table__time table__cell">time</th>
+            <th class="table__person table__cell">person</th>
+            <th class="table__action table__cell">action</th>
+            <th class="table__comments table__cell">comments</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table__cell">12:50</td>
+            <td class="table__cell">John Doe</td>
+            <td class="table__cell">walked the dog</td>
+            <td class="table__cell">dog was happy</td>
+          </tr>
+          <tr>
+            <td class="table__cell">17:11</td>
+            <td class="table__cell">Jane Doe</td>
+            <td class="table__cell">went out drinking</td>
+            <td class="table__cell">again</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
 </body>
