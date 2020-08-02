@@ -67,9 +67,9 @@
       </div>
       <div class="date__box date__selected">
         <div class="date__box--selected date__selected--js">
-        <p class="date__year">2020</p>
-        <p class="date__month">july</p>
-        <p class="date__day">15</p>
+          <p class="date__year">2020</p>
+          <p class="date__month">july</p>
+          <p class="date__day">15</p>
         </div>
         <div class="actions">
           <button class="actions__button actions__add actions__add--js" aria-label="add activity">
@@ -80,8 +80,8 @@
           </button>
           <button class="actions__button" aria-label="go to calendar">
             <a href="calendar.html">
-            <img class="actions__icon" src="../assets/img/calendar.svg" alt="go to calendar" />
-          </a>
+              <img class="actions__icon" src="../assets/img/calendar.svg" alt="go to calendar" />
+            </a>
           </button>
         </div>
       </div>
@@ -100,6 +100,47 @@
     </section>
     <section class="display">
       <div class="display__arrow"></div>
+
+    </section>
+
+    <section class="insert insert--js">
+      <form class="form">
+        <fieldset class="insert__fieldset">
+          <label tabindex="0">
+            <input type="radio" id="playerOne" name="player" value="playerOne" class="insert__person--radio">
+            <p class="insert__person insert__person--js">John Doe</p>
+          </label>
+          <label tabindex="0">
+            <input type="radio" id="playerTwo" name="player" value="playerTwo" class="insert__person--radio">
+            <p class="insert__person insert__person--js">Jane Doe</p>
+          </label>
+        </fieldset>
+
+        <select name="action" class="dropdown dropdown--js" id="action" aria-label="select which actions">
+          <option value="1">walked the dog</option>
+          <option value="2">cleaned</option>
+          <option value="3">did something nice</option>
+          <option value="4">was grumpy</option>
+          <option value="5">went out drinking</option>
+        </select>
+
+        <section class="insert__comments">
+          <p class="insert__text">
+            Comments
+          </p>
+          <input class="insert__input" type="text" id="comments" name="comments" required minlength="2" maxlength="248"
+            aria-label="type any comments for the action">
+        </section>
+
+
+
+        <p class="submit">
+          <input type="submit" class="submit__action" value="ADD">
+        </p>
+      </form>
+    </section>
+
+    <section class="view view--js">
 
     </section>
   </main>

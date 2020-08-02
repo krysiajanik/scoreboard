@@ -6,6 +6,7 @@
 @import "modules/scoreboard.scss";
 @import "modules/day.scss";
 @import "modules/activities.scss";
+@import "modules/add.scss";
 
 @import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200;1,300;1,400&family=Open+Sans:ital,wght@0,600;1,300;1,400&family=Quicksand:wght@300;400;500;600&display=swap";
 
@@ -32,6 +33,11 @@ body {
 
 .logo {
   margin-top: 4rem;
+}
+
+.dropdown {
+    margin: 0.25rem 1.5rem;
+    min-width: 5rem;
 }
 
 .header {
