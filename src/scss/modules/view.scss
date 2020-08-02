@@ -3,13 +3,18 @@
   &--visible {
     display: block;
   }
+  &__timeline {
+    border-left: 1px solid $grey;
+    width: 19rem;
+    margin: 2rem auto;
+  }
 }
 
 .card {
-  background-color: #e7e9ee;
+  background-color: #f0f3f5cc;
   box-shadow: 0.25rem 0.25rem 0.25rem #8c95a8;
   width: 18rem;
-  margin: 2rem auto;
+  margin: 2rem 1rem;
   padding: 0 1rem 1rem 1rem;
   &__flex {
     display: flex;
@@ -45,9 +50,24 @@
     margin: 0;
     font-size: 0.75rem;
     line-height: 1rem;
+    display: grid;
+    grid-template-columns: 2rem 1rem;
+    justify-items: right;
+    grid-column-gap: 0.25rem;
     position: relative;
-    right: 4rem;
+    right: 4.75rem;
+    
+    &::after {
+      padding: 0.5rem;
+      background: $grey;
+      border-radius: 50%;
+      content: "";
+      font-size: 0;
+      vertical-align: middle;
+      justify-self: middle;
+    }
   }
+
   &__action {
     font-weight: 400;
   }
