@@ -117,9 +117,24 @@ buttonPrevious.addEventListener('click', nowMinus);
 
 
 
+//toggling visible elements in the add view
+const viewActionVisible = document.querySelector(".view--js")
+const addActionVisible = document.querySelector(".insert--js")
+
 //show the fields for adding action
 const addAction = document.querySelector(".actions__add--js")
 addAction.addEventListener('click', () => {
-  const addActionVisible = document.querySelector(".insert--js")
   addActionVisible.classList.toggle('insert--visible')
+  if (viewActionVisible.classList.contains('view--visible')) {
+    viewActionVisible.classList.remove('view--visible')
+  }
+});
+
+//show the fields for viewing history
+const viewAction = document.querySelector(".actions__view--js")
+viewAction.addEventListener('click', () => {
+  viewActionVisible.classList.toggle('view--visible')
+  if (addActionVisible.classList.contains('insert--visible')) {
+    addActionVisible.classList.remove('insert--visible')
+  }
 });
