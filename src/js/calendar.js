@@ -20,13 +20,24 @@ let nowM = (date, n) => {
   return newDate;
 };
 
-//plug the date into html
-let highlightDay = document.querySelector(".date__selected--js");
-let dayMinusOne = document.querySelector(".date__minus-one--js");
-let dayMinusTwo = document.querySelector(".date__minus-two--js");
-let dayPlusOne = document.querySelector(".date__plus-one--js");
-let dayPlusTwo = document.querySelector(".date__plus-two--js");
 
+// let moveLeft = [
+//   { transform: 'translate(-100%, 0%)' },
+//   { opacity: '0', easing: 'ease-out' }
+// ];
+
+// let moveSelected= [
+//   // { transform: 'translate(-100%, 0%)' },
+//   // { color: '#deecf1' },
+//   { scale: '1.3' },
+// ]
+
+// let moveDuration = {
+//   duration: 500,
+// }
+
+
+//plug the date into html
 let nowDest = (date) => {
   
   let dateHTML = (date) => {
@@ -36,18 +47,28 @@ let nowDest = (date) => {
       <p class="date__day">${day}</p>`
       return dateFormat;
   }
-  
+  let highlightDay = document.querySelector(".date__selected--js");
   highlightDay.innerHTML = dateHTML(date);
+  // highlightDay.animate(moveSelected, moveDuration);
+  // highlightDay.animate ([
+  //   {scale: 1.4}
+  // ], 500);
+    
 
+  let dayMinusTwo = document.querySelector(".date__minus-two--js");
   nowM2 = nowM(date, 2);
   dayMinusTwo.innerHTML = dateHTML(nowM2);
 
+  let dayMinusOne = document.querySelector(".date__minus-one--js");
   nowM1 = nowM(date, 1);
   dayMinusOne.innerHTML = dateHTML(nowM1);
 
+  let dayPlusOne = document.querySelector(".date__plus-one--js");
   nowP1 = nowP(date, 1);
   dayPlusOne.innerHTML = dateHTML(nowP1);
+  
 
+  let dayPlusTwo = document.querySelector(".date__plus-two--js");
   nowP2 = nowP(date, 2);
   dayPlusTwo.innerHTML = dateHTML(nowP2);
 }
@@ -93,4 +114,11 @@ function nowMinus() {
 //get the button and add event listener
 const buttonPrevious = document.querySelector(".date__previous--js");
 buttonPrevious.addEventListener('click', nowMinus);
+
+
+
+
+
+
+
 
