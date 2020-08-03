@@ -5,7 +5,7 @@ registerSW();
 
 const firebase = require("firebase");
 // Required for side-effects
-require("firebase/firestore");
+// require("firebase/firestore");
 
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({

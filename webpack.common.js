@@ -8,6 +8,7 @@ module.exports = {
     another: "./src/js/another.js",
     calendar: "./src/js/calendar.js",
     add: "./src/js/add.js",
+    firebase: "./src/js/firebase.js",
   },
   output: {
     filename: "[name].[hash:8].js",
