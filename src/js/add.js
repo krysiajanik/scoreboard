@@ -47,6 +47,15 @@ let nowDest = (date) => {
       <p class="date__day">${day}</p>`
     return dateFormat;
   }
+
+  // let dateHTMLSelected = (date) => {
+  //   let { day, month, year } = nowO(date);
+  //   const dateFormat = `<p class="date__year">${year}</p>
+  //     <p class="date__month">${month}</p>
+  //     <p class="date__day"><input class="flatpickr flatpickr--js" type="text" placeholder="${day}"></p>`
+  //   return dateFormat;
+  // }
+
   let highlightDay = document.querySelector(".date__selected--js");
   highlightDay.innerHTML = dateHTML(date);
   // highlightDay.animate(moveSelected, moveDuration);
@@ -120,6 +129,7 @@ buttonPrevious.addEventListener('click', nowMinus);
 //toggling visible elements in the add view
 const viewActionVisible = document.querySelector(".view--js")
 const addActionVisible = document.querySelector(".insert--js")
+const viewCalendarVisible = document.querySelector(".calendar--js")
 
 //show the fields for adding action
 const addAction = document.querySelector(".actions__add--js")
@@ -127,6 +137,9 @@ addAction.addEventListener('click', () => {
   addActionVisible.classList.toggle('insert--visible')
   if (viewActionVisible.classList.contains('view--visible')) {
     viewActionVisible.classList.remove('view--visible')
+  }
+  if (viewCalendarVisible.classList.contains('calendar--visible')) {
+    viewCalendarVisible.classList.remove('calendar--visible')
   }
 });
 
@@ -136,5 +149,20 @@ viewAction.addEventListener('click', () => {
   viewActionVisible.classList.toggle('view--visible')
   if (addActionVisible.classList.contains('insert--visible')) {
     addActionVisible.classList.remove('insert--visible')
+  }
+  if (viewCalendarVisible.classList.contains('calendar--visible')) {
+    viewCalendarVisible.classList.remove('calendar--visible')
+  }
+});
+
+//show the calendar to go to date
+const viewCalendar = document.querySelector('.actions__calendar--js')
+viewCalendar.addEventListener('click', () => {
+  viewCalendarVisible.classList.toggle('calendar--visible')
+  if (addActionVisible.classList.contains('insert--visible')) {
+    addActionVisible.classList.remove('insert--visible')
+  }
+  if (viewActionVisible.classList.contains('view--visible')) {
+    viewActionVisible.classList.remove('view--visible')
   }
 });

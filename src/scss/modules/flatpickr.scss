@@ -1,0 +1,29 @@
+.calendar {
+  display: none;
+  &--visible {
+    margin: 3rem auto;
+    width: 9.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__button {
+    margin: 2rem;
+    background-color: $lightText;
+    border: 1px solid #a1a4b1;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+  }
+}
+.flatpickr {
+  width: 100%;
+  background: none;
+  border: 1px solid #a1a4b1;
+  border-radius: 4px;
+  padding: 0.25rem;
+  text-align: center;
+}
