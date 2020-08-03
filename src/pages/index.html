@@ -99,8 +99,31 @@
 
 
 
-<footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
 
-</footer>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
 
-</body></html>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBT3NVs3JliyXgrV2ZP9ef9z3W9Hip2JVc",
+    authDomain: "scoreboard-072020.firebaseapp.com",
+    databaseURL: "https://scoreboard-072020.firebaseio.com",
+    projectId: "scoreboard-072020",
+    storageBucket: "scoreboard-072020.appspot.com",
+    messagingSenderId: "1073171414158",
+    appId: "1:1073171414158:web:ae37ab79b824b6bc325ddf",
+    measurementId: "G-QEP82SKLR1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+
+</html>
