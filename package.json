@@ -44,6 +44,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "dependencies": {
+    "flatpickr": "^4.6.3",
     "moment": "^2.27.0",
     "normalize.css": "^8.0.1"
   },

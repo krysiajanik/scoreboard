@@ -99,7 +99,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/add.html",
       inject: true,
-      chunks: ["index", "add"],
+      chunks: ["index", "add", "calendar"],
       filename: "add.html",
     }),
     new HtmlWebpackPlugin({
