@@ -46,7 +46,7 @@
   "dependencies": {
     "firebase": "^7.17.1",
     "flatpickr": "^4.6.3",
-    "moment": "^2.27.0",
+    "moment": "^2.29.2",
     "normalize.css": "^8.0.1"
   },
   "repository": {
